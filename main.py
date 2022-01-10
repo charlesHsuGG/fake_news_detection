@@ -65,16 +65,16 @@ def train_step(sequence, optimizer, inp, targs):
 
 
 if __name__ == "__main__":
-    if not os.path.isfile('./xtr_shuffled.npy') or \
-    not os.path.isfile('./xte_shuffled.npy') or \
-    not os.path.isfile('./ytr_shuffled.npy') or \
-    not os.path.isfile('./yte_shuffled.npy'):
+    if not os.path.isfile('./datasets/xtr_shuffled.npy') or \
+    not os.path.isfile('./datasets/xte_shuffled.npy') or \
+    not os.path.isfile('./datasets/ytr_shuffled.npy') or \
+    not os.path.isfile('./datasets/yte_shuffled.npy'):
        getEmbeddings.clean_data()
 
-    xtr = np.load('./xtr_shuffled.npy')
-    xte = np.load('./xte_shuffled.npy')
-    y_train = np.load('./ytr_shuffled.npy')
-    y_test = np.load('./yte_shuffled.npy')
+    xtr = np.load('./datasets/xtr_shuffled.npy')
+    xte = np.load('./datasets/xte_shuffled.npy')
+    y_train = np.load('./datasets/ytr_shuffled.npy')
+    y_test = np.load('./datasets/yte_shuffled.npy')
 
     cnt = Counter()
     x_train = []
