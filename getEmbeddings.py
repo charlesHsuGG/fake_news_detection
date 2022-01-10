@@ -116,7 +116,7 @@ def clean_data():
     ytr = y[:train_size]
     yte = y[train_size:]
 
-    np.save('./xtr_shuffled.npy',xtr)
-    np.save('./xte_shuffled.npy',xte)
-    np.save('./ytr_shuffled.npy',ytr)
-    np.save('./yte_shuffled.npy',yte)
+    np.save('./datasets/xtr_shuffled.npy',xtr)
+    np.save('./datasets/xte_shuffled.npy',xte)
+    np.save('./datasets/ytr_shuffled.npy',ytr)
+    np.save('./datasets/yte_shuffled.npy',yte)
