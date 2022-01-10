@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-datasets/*
-.vscode/*
-=======
 __pycache__/*.pyc
 .vscode/*
 datasets/*
->>>>>>> 7a3ba943002c20ee5306b7de005e158d152ae450
